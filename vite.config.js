@@ -3,5 +3,5 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
     base: "/kza-mobile/",
-    assetsInclude: ["**/*.mov"],
+    // assetsInclude: ["**/*.mov"],
 });
