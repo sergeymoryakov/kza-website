@@ -1,6 +1,4 @@
 import "./styles/index.css";
-// import LOGO_3D_SAFARI from "models/logo-transparent-vp9-safari.mp4";
-// import LOGO_3D_CHROME from "models/logo-transparent-vp9-chrome.webm";
 const LOGO_3D_SAFARI = "models/logo-transparent-vp9-safari.mp4";
 const LOGO_3D_CHROME = "models/logo-transparent-vp9-chrome.webm";
 import { setupCounter } from "./counter.js";
