@@ -3,7 +3,7 @@ import { setupCounter } from "./counter.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
-    <h1>Welcome to Mobile Version!</h1>
+    <h3>Welcome to Test Counter:</h3>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
