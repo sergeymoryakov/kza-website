@@ -1,0 +1,130 @@
+.h1 {
+    /* padding: 1rem 0; */
+    font-size: 9.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 7.5rem;
+    letter-spacing: -0.57rem;
+}
+
+.h1-mob {
+    font-size: 4.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.5rem;
+    letter-spacing: -0.255rem;
+}
+
+.h2 {
+    /* padding: 0.5rem 0; */
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 5rem;
+    letter-spacing: -0.36rem;
+}
+
+.h2-mob {
+    font-size: 2.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem;
+    letter-spacing: -0.17625rem;
+}
+
+.h3 {
+    /* padding: 0.25rem 0; */
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem;
+    letter-spacing: -0.12rem;
+}
+
+.h3-mob {
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.05625rem;
+}
+
+.h4 {
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.02875rem;
+}
+
+.h4-bold {
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.01438rem;
+}
+
+/* same as regular */
+.h4-mob {
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.02875rem;
+}
+
+/* same as regular */
+.h4-mob-bold {
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.01438rem;
+}
+
+.p-body {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.p-body-caps {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.p-body-bold {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1rem;
+}
+
+.p-body-small {
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.p-body-small-underline {
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-decoration-line: underline;
+}
+
+/* highlight text */
+.ft-hl-blue {
+    color: var(--clr-royal-blue);
+}
+
+.ft-hl-orange {
+    color: var(--clr-fire-red);
+}

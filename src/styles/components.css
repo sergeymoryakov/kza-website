@@ -1,0 +1,19 @@
+/* horizontal orange custom line */
+.orange-line {
+    width: 100%;
+    height: 1.5px; /* left side thickness */
+    background-color: var(--clr-fire-red);
+    margin-top: 20px;
+    position: relative;
+}
+
+/* For the thinner left part */
+.orange-line::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1.5px; /* adjust right adder vertically */
+    width: 50%;
+    height: 1.5px; /* right side thickness adder */
+    background-color: var(--clr-fire-red);
+}
