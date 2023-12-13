@@ -17,3 +17,48 @@ button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
+
+/* TEST: toggle button */
+.toggle-button {
+    background-color: var(
+        --clr-royal-blue
+    ); /* Replace with the actual 'off' color */
+    border: none;
+    border-radius: 20px; /* Adjust to match your design */
+    color: white;
+    padding: 10px 20px; /* Adjust to match your design */
+    font-size: 1rem; /* Adjust to match your design */
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.toggle-button .button-text {
+    margin-right: 10px; /* Space for the toggle */
+}
+
+.toggle-button .toggle-switch {
+    width: 20px; /* Width of the toggle switch */
+    height: 20px; /* Height of the toggle switch */
+    background-color: white; /* 'off' toggle color */
+    border-radius: 50%;
+    position: absolute;
+    right: 10px; /* Adjust to match your design */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-button.on {
+    background-color: var(
+        --clr-fire-red
+    ); /* Replace with the actual 'on' color */
+}
+
+.toggle-button.on .toggle-switch {
+    background-color: #fff; /* 'on' toggle color */
+    transform: translate(
+        20px,
+        -50%
+    ); /* Adjust the X translation to move the toggle */
+}
