@@ -5,4 +5,4 @@
       <button id="counter" type="button"></button>
     </div>
   </div>
-`;s(document.querySelector("#counter"));document.querySelector(".toggle-button").addEventListener("click",function(){this.classList.toggle("on")});
+`;s(document.querySelector("#counter"));
