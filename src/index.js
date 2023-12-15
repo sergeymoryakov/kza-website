@@ -12,6 +12,7 @@ document.querySelector("#app").innerHTML = `
 
 setupCounter(document.querySelector("#counter"));
 
-document.querySelector(".toggle-button").addEventListener("click", function () {
-    this.classList.toggle("on");
-});
+// TEST: Button Toggle
+// document.querySelector(".toggle-button").addEventListener("click", function () {
+//     this.classList.toggle("on");
+// });
