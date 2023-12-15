@@ -108,12 +108,16 @@
     border: none;
     border-radius: 48px;
     color: var(--clr-white);
-    padding: 10px 16px;
+    padding: 12px 16px;
     /* font-size: 1rem; */
     cursor: pointer;
     position: relative;
     outline: none;
     /* overflow: hidden; To ensure the border doesn't extend outside the button's rounded corners */
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-between; */
+    align-items: center;
 }
 
 .btn-toggle-more .button-text {
@@ -173,6 +177,10 @@
     position: relative;
     outline: none;
     /* overflow: hidden; To ensure the border doesn't extend outside the button's rounded corners */
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-between; */
+    align-items: center;
 }
 
 .btn-toggle-touch-white .button-text {
@@ -241,6 +249,10 @@
     position: relative;
     outline: none;
     /* overflow: hidden; To ensure the border doesn't extend outside the button's rounded corners */
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-between; */
+    align-items: center;
 }
 
 .btn-toggle-touch-black .button-text {
@@ -294,4 +306,72 @@
 .btn-toggle-touch-black:hover .toggle-switch {
     background-color: var(--clr-white);
     transform: translate(14px, -50%);
+}
+
+/* TEST: Button TOUCH */
+.btn-touch {
+    background-color: var(--clr-transparent);
+    border: 2px solid var(--clr-white);
+    border-radius: 48px;
+    color: var(--clr-white);
+    padding: 10px 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-touch .button-text {
+    /* display: block; */
+    /* margin-right: 40px; Space for the toggle */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-touch .arrow-right {
+    display: block;
+    width: 9px;
+    height: 16px;
+    background: url("../../public/icons/Arrow-orange-right.svg") no-repeat
+        center;
+}
+
+.btn-touch:hover {
+    border: 2px solid var(--clr-fire-red);
+    background-color: var(--clr-fire-red);
+}
+
+.btn-touch:hover .arrow-right {
+    background: url("../../public/icons/Arrow-blue-right.svg") no-repeat center;
+}
+
+/* TEST: Button HOME */
+.btn-home {
+    background-color: var(--clr-transparent);
+    border: 2px solid var(--clr-white);
+    border-radius: 48px;
+    color: var(--clr-white);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-home .button-text {
+    /* margin-right: 40px; Space for the toggle */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-home:hover {
+    border: 2px solid var(--clr-fire-red);
+    background-color: var(--clr-fire-red);
 }
