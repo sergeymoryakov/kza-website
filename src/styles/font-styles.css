@@ -120,6 +120,14 @@
     text-decoration-line: underline;
 }
 
+/* .p-tag-vertical {
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+} */
+
 /* highlight text */
 .ft-hl-blue {
     color: var(--clr-royal-blue);
