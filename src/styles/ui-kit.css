@@ -52,7 +52,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    gap: 1rem;
     position: relative;
 }
 
@@ -66,6 +66,7 @@
 }
 
 .test-div-flex {
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -343,7 +344,7 @@
     display: block;
     width: 9px;
     height: 16px;
-    background: url("../../public/icons/Arrow-orange-right.svg") no-repeat
+    background: url("../../public/icons/arrow-orange-right.svg") no-repeat
         center;
 }
 
@@ -353,7 +354,7 @@
 }
 
 .btn-touch:hover .arrow-right {
-    background: url("../../public/icons/Arrow-blue-right.svg") no-repeat center;
+    background: url("../../public/icons/arrow-blue-right.svg") no-repeat center;
 }
 
 /* TEST: Button HOME */
@@ -401,7 +402,7 @@
     display: block;
     width: 9px;
     height: 16px;
-    background: url("../../public/icons/Arrow-blue-left.svg") no-repeat center;
+    background: url("../../public/icons/arrow-blue-left.svg") no-repeat center;
     transform: rotate(90deg);
     transform-origin: center;
 }
@@ -418,7 +419,80 @@
     display: block;
     width: 9px;
     height: 16px;
-    background: url("../../public/icons/Arrow-blue-right.svg") no-repeat center;
+    background: url("../../public/icons/arrow-blue-right.svg") no-repeat center;
     transform: rotate(90deg);
     transform-origin: center;
+}
+
+/* tags */
+
+.tag-orange {
+    display: flex;
+    padding: 0.15rem 0.5rem 0.2rem 0.5rem;
+    align-items: center;
+    border-radius: 3rem;
+    border: 1px solid var(--clr-fire-red);
+    background: var(--clr-fire-red);
+    color: var(--clr-white);
+}
+
+.tag-blue {
+    display: flex;
+    padding: 0.15rem 0.5rem 0.2rem 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    border: 1px solid var(--clr-royal-blue);
+    background: var(--clr-royal-blue);
+    color: var(--clr-white);
+}
+
+.tag-white {
+    display: flex;
+    padding: 0.15rem 0.5rem 0.2rem 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    border: 1px solid var(--clr-white);
+    background: var(--clr-transparent);
+    color: var(--clr-white);
+}
+
+.tag-black {
+    display: flex;
+    padding: 0.15rem 0.5rem 0.2rem 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    border: 1px solid var(--clr-black-gray);
+    background: var(--clr-transparent);
+    color: var(--clr-black-gray);
+}
+
+.arrow-u-l {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("../../public/icons/arrow_U_L.svg") no-repeat center;
+}
+
+.arrow-u-r {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("../../public/icons/arrow_U_R.svg") no-repeat center;
+}
+
+.arrow-d-l {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("../../public/icons/arrow_D_L.svg") no-repeat center;
+}
+
+.arrow-d-r {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("../../public/icons/arrow_D_R.svg") no-repeat center;
 }
