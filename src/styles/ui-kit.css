@@ -35,9 +35,6 @@
 .test-block {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    /* border: 1px solid red; */
-    /* padding: 0.5rem; */
-    /* background: white; */
     padding: 24px 24px;
     border: 1px solid var(--clr-gray);
     border-radius: 40px;
@@ -70,6 +67,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.test-div-flex-column {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
