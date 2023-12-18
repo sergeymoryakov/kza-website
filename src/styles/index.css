@@ -60,7 +60,7 @@
     /* --mg-168: 168px; */
     --mg-192: 192px;
 
-    font-family: "GeneralSans-Variable", sans-serif;
+    font-family: "GeneralSans-Variable", system-ui, -apple-system, sans-serif;
 
     background: var(--clr-gray);
     color: var(--clr-black);

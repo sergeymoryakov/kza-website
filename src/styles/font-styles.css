@@ -1,125 +1,132 @@
 .h1 {
-    /* padding: 1rem 0; */
-    font-size: 9.5rem;
+    font-size: clamp(4.25rem, 10.5vw, 9.5rem);
+    line-height: clamp(3.5rem, 8.3vw, 7.5rem);
+    letter-spacing: clamp(-0.255rem, -0.63vw, -0.57rem);
+    /* font-size: 9.5rem; */
+    /* line-height: 7.5rem; */
+    /* letter-spacing: -0.57rem; */
     font-style: normal;
     font-weight: 500;
-    line-height: 7.5rem;
-    letter-spacing: -0.57rem;
 }
 
 .h1-mob {
     font-size: 4.25rem;
-    font-style: normal;
-    font-weight: 500;
     line-height: 3.5rem;
     letter-spacing: -0.255rem;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .h2 {
-    /* padding: 0.5rem 0; */
-    font-size: 6rem;
+    font-size: clamp(2.9375rem, 6.6vw, 6rem);
+    line-height: clamp(2.5rem, 5.5vw, 5rem);
+    letter-spacing: clamp(-0.05625rem, -0.4vw, -0.36rem);
+    /* font-size: 6rem;
+    line-height: 5rem;
+    letter-spacing: -0.36rem; */
     font-style: normal;
     font-weight: 500;
-    line-height: 5rem;
-    letter-spacing: -0.36rem;
 }
 
 .h2-mob {
     font-size: 2.9375rem;
-    font-style: normal;
-    font-weight: 500;
     line-height: 2.5rem;
     letter-spacing: -0.17625rem;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .h3 {
-    /* padding: 0.25rem 0; */
-    font-size: 4rem;
+    font-size: clamp(1.875rem, 4.4vw, 4rem);
+    line-height: clamp(1.5rem, 3.9vw, 3.5rem);
+    letter-spacing: clamp(-0.05625rem, -0.13vw, -0.12rem);
+    /* font-size: 4rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.12rem; */
     font-style: normal;
     font-weight: 400;
-    line-height: 3.5rem;
-    letter-spacing: -0.12rem;
 }
 
 .h3-mob {
     font-size: 1.875rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: -0.05625rem;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .h4 {
     font-size: 1.4375rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: -0.02875rem;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .h4-bold {
     font-size: 1.4375rem;
-    font-style: normal;
-    font-weight: 600;
     line-height: 1.5rem;
     letter-spacing: -0.01438rem;
+    font-style: normal;
+    font-weight: 600;
 }
 
 /* same as regular */
 .h4-mob {
     font-size: 1.4375rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: -0.02875rem;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* same as regular */
 .h4-mob-bold {
     font-size: 1.4375rem;
-    font-style: normal;
-    font-weight: 600;
     line-height: 1.5rem;
     letter-spacing: -0.01438rem;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .p-body {
     font-size: 0.875rem;
+    line-height: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1rem;
 }
 
 .p-body-caps {
     font-size: 0.875rem;
+    line-height: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1rem;
     text-transform: uppercase;
 }
 
 .p-body-bold {
     font-size: 0.875rem;
+    line-height: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 1rem;
 }
 
 .p-body-small {
     font-size: 0.625rem;
+    line-height: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1rem;
 }
 
 .p-body-small-underline {
     font-size: 0.625rem;
+    line-height: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1rem;
     text-decoration-line: underline;
 }
 
+/* moved to tags.css: */
 /* .p-tag-vertical {
     font-size: 0.5625rem;
     font-style: normal;
