@@ -1,6 +1,6 @@
 const template = document.createElement("template");
 template.innerHTML = `
-            <link rel="stylesheet" href="./src/components/LinkHomeWhite.css">
+            <link rel="stylesheet" href="src/components/LinkHomeWhite.css">
             <a class="link-home-white" href="#contacts">
                 <span class="button-text">up to home</span>
             </a>

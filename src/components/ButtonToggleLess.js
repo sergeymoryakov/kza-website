@@ -1,6 +1,6 @@
 const template = document.createElement("template");
 template.innerHTML = `
-            <link rel="stylesheet" href="./src/components/ButtonToggleLess.css">
+            <link rel="stylesheet" href="ButtonToggleLess.css">
             <button class="btn-toggle-less">
                 <span class="button-text">less</span>
                 <span class="toggle-switch"></span>

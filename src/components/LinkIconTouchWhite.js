@@ -1,6 +1,6 @@
 const template = document.createElement("template");
 template.innerHTML = `
-            <link rel="stylesheet" href="./src/components/LinkIconTouchWhite.css">
+            <link rel="stylesheet" href="./components/LinkIconTouchWhite.css">
             <a class="link-icon-touch-white" href="#contacts">
                 <span class="button-text">get in touch</span>
                 <span class="arrow-right"></span>
