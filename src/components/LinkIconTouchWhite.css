@@ -1,0 +1,64 @@
+.link-icon-touch-white {
+    background-color: var(--clr-transparent);
+    border: 2px solid var(--clr-white);
+    border-radius: 48px;
+    color: var(--clr-white);
+    padding: 10px 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.link-icon-touch-white .button-text {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.link-icon-touch-white .arrow-right {
+    display: block;
+    width: 9px;
+    height: 16px;
+    background: url("../../public/icons/arrow-orange-right.svg") no-repeat
+        center;
+}
+
+.link-icon-touch-white:hover {
+    border: 2px solid var(--clr-fire-red);
+    background-color: var(--clr-fire-red);
+}
+
+.link-icon-touch-white:hover .arrow-right {
+    background: url("../../public/icons/arrow-blue-right.svg") no-repeat center;
+}
+
+/* TEST: Button HOME */
+.btn-home {
+    background-color: var(--clr-transparent);
+    border: 2px solid var(--clr-white);
+    border-radius: 48px;
+    color: var(--clr-white);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-home .button-text {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-home:hover {
+    border: 2px solid var(--clr-fire-red);
+    background-color: var(--clr-fire-red);
+}

@@ -1,0 +1,25 @@
+.link-home-white {
+    background-color: var(--clr-transparent);
+    border: 2px solid var(--clr-white);
+    border-radius: 48px;
+    color: var(--clr-white);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-home-white .button-text {
+    /* margin-right: 40px; Space for the toggle */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.link-home-white:hover {
+    border: 2px solid var(--clr-fire-red);
+    background-color: var(--clr-fire-red);
+}

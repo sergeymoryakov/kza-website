@@ -3,6 +3,8 @@ import "./components/ButtonToggleLess.js";
 import "./components/ButtonToggleMore.js";
 import "./components/LinkToggleTouchWhite.js";
 import "./components/LinkToggleTouchBlack.js";
+import "./components/LinkIconTouchWhite.js";
+import "./components/LinkHomeWhite.js";
 
 import { setupCounter } from "./counter.js";
 
