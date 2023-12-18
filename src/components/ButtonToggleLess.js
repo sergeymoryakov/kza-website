@@ -1,11 +1,13 @@
 const template = document.createElement("template");
 template.innerHTML = `
-            <link rel="stylesheet" href="src/components/ButtonToggleLess.css">
-            <button class="btn-toggle-less">
-                <span class="button-text">less</span>
-                <span class="toggle-switch"></span>
-            </button>
-            `;
+    <style>
+        @import url('src/components/ButtonToggleLess.css');
+    </style>
+    <button class="btn-toggle-less">
+        <span class="button-text">less</span>
+        <span class="toggle-switch"></span>
+    </button>
+`;
 
 class ButtonToggleLess extends HTMLElement {
     constructor() {
@@ -16,3 +18,5 @@ class ButtonToggleLess extends HTMLElement {
 }
 
 customElements.define("button-toggle-less", ButtonToggleLess);
+
+// <link rel="stylesheet" href="./src/components/ButtonToggleLess.css">
