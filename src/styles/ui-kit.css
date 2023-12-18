@@ -121,211 +121,10 @@ section {
         0px -2px 4px 0px rgba(198, 198, 198, 0.25) inset;
 }
 
-/* TEST: Toggle Button */
-.btn-toggle-more {
-    background-color: var(--clr-royal-blue);
-    border: none;
-    border-radius: 48px;
-    color: var(--clr-white);
-    padding: 12px 16px;
-    /* font-size: 1rem; */
-    cursor: pointer;
-    position: relative;
-    outline: none;
-    /* overflow: hidden; To ensure the border doesn't extend outside the button's rounded corners */
-    display: flex;
-    /* flex-direction: row;
-    justify-content: space-between; */
-    align-items: center;
-}
+/* REMOVED: TEST: Toggle Button */
 
-.btn-toggle-more .button-text {
-    margin-right: 40px; /* Space for the toggle */
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1rem;
-    text-transform: uppercase;
-}
-
-.btn-toggle-more::after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 38px;
-    height: 24px;
-    border: 2px solid var(--clr-white);
-    border-radius: 24px;
-    box-sizing: border-box;
-}
-
-.btn-toggle-more .toggle-switch {
-    width: 24px;
-    height: 24px;
-    background-color: var(--clr-white);
-    border-radius: 50%;
-    position: absolute;
-    right: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color 0.3s, transform 0.3s;
-    /* z-index: 1; Make sure the switch appears above the border */
-}
-
-.btn-toggle-more:hover {
-    background-color: var(--clr-fire-red);
-}
-
-.btn-toggle-more:hover .toggle-switch {
-    background-color: var(--clr-white);
-    transform: translate(14px, -50%);
-}
-
-/* TEST: Toggle Button White*/
-.btn-toggle-touch-white {
-    background-color: var(--clr-transparent);
-    /* border: none; */
-    border: 2px solid var(--clr-white);
-    border-radius: 48px;
-    color: var(--clr-white);
-    padding: 10px 16px;
-    /* font-size: 1rem; */
-    cursor: pointer;
-    position: relative;
-    outline: none;
-    /* overflow: hidden; To ensure the border doesn't extend outside the button's rounded corners */
-    display: flex;
-    /* flex-direction: row;
-    justify-content: space-between; */
-    align-items: center;
-}
-
-.btn-toggle-touch-white .button-text {
-    margin-right: 40px; /* Space for the toggle */
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1rem;
-    text-transform: uppercase;
-}
-
-.btn-toggle-touch-white::after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 38px;
-    height: 24px;
-    border: 2px solid var(--clr-white);
-    border-radius: 24px;
-    box-sizing: border-box;
-}
-
-.btn-toggle-touch-white .toggle-switch {
-    width: 24px;
-    height: 24px;
-    background-color: var(--clr-white);
-    border-radius: 50%;
-    position: absolute;
-    right: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color 0.3s, transform 0.3s;
-    /* z-index: 1; Make sure the switch appears above the border */
-}
-
-.btn-toggle-touch-white:hover {
-    background-color: var(--clr-transparent);
-    border: 2px solid var(--clr-black-gray);
-}
-
-.btn-toggle-touch-white:hover .button-text {
-    color: var(--clr-black-gray);
-}
-
-.btn-toggle-touch-white:hover::after {
-    border: 2px solid var(--clr-black-gray);
-}
-
-.btn-toggle-touch-white:hover .toggle-switch {
-    background-color: var(--clr-black-gray);
-    transform: translate(14px, -50%);
-}
-
-/* TEST: Toggle Button Black */
-.btn-toggle-touch-black {
-    background-color: var(--clr-transparent);
-    /* border: none; */
-    border: 2px solid var(--clr-black-gray);
-    border-radius: 48px;
-    color: var(--clr-black-gray);
-    padding: 10px 16px;
-    /* font-size: 1rem; */
-    cursor: pointer;
-    position: relative;
-    outline: none;
-    /* overflow: hidden; To ensure the border doesn't extend outside the button's rounded corners */
-    display: flex;
-    /* flex-direction: row;
-    justify-content: space-between; */
-    align-items: center;
-}
-
-.btn-toggle-touch-black .button-text {
-    margin-right: 40px; /* Space for the toggle */
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1rem;
-    text-transform: uppercase;
-}
-
-.btn-toggle-touch-black::after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 38px;
-    height: 24px;
-    border: 2px solid var(--clr-black-gray);
-    border-radius: 24px;
-    box-sizing: border-box;
-}
-
-.btn-toggle-touch-black .toggle-switch {
-    width: 24px;
-    height: 24px;
-    background-color: var(--clr-black-gray);
-    border-radius: 50%;
-    position: absolute;
-    right: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color 0.3s, transform 0.3s;
-    /* z-index: 1; Make sure the switch appears above the border */
-}
-
-.btn-toggle-touch-black:hover {
-    background-color: var(--clr-transparent);
-    border: 2px solid var(--clr-white);
-}
-
-.btn-toggle-touch-black:hover .button-text {
-    color: var(--clr-white);
-}
-
-.btn-toggle-touch-black:hover::after {
-    border: 2px solid var(--clr-white);
-}
-
-.btn-toggle-touch-black:hover .toggle-switch {
-    background-color: var(--clr-white);
-    transform: translate(14px, -50%);
-}
+/* REMOVED: Toggle Button White => Link Toggle Touch White */
+/* REMOVED: Toggle Button Black => Link Toggle Touch Black */
 
 /* TEST: Button TOUCH */
 .btn-touch {
@@ -395,119 +194,9 @@ section {
     background-color: var(--clr-fire-red);
 }
 
-/* tag vertical */
-.tag-vertical {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    writing-mode: vertical-rl;
-    transform: rotate(
-        180deg
-    ); /* This rotates the text to be the right way up */
-}
-
-.tag-vertical .bracket-left {
-    display: block;
-    width: 9px;
-    height: 16px;
-    background: url("../../public/icons/arrow-blue-left.svg") no-repeat center;
-    transform: rotate(90deg);
-    transform-origin: center;
-}
-
-.p-tag-vertical {
-    font-size: 0.5625rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1rem;
-    text-transform: uppercase;
-}
-
-.tag-vertical .bracket-right {
-    display: block;
-    width: 9px;
-    height: 16px;
-    background: url("../../public/icons/arrow-blue-right.svg") no-repeat center;
-    transform: rotate(90deg);
-    transform-origin: center;
-}
-
-/* tags */
-
-.tag-orange {
-    display: flex;
-    padding: 0.15rem 0.5rem 0.2rem 0.5rem;
-    align-items: center;
-    border-radius: 3rem;
-    border: 1px solid var(--clr-fire-red);
-    background: var(--clr-fire-red);
-    color: var(--clr-white);
-}
-
-.tag-blue {
-    display: flex;
-    padding: 0.15rem 0.5rem 0.2rem 0.5rem;
-    align-items: center;
-    gap: 0.5rem;
-    border-radius: 3rem;
-    border: 1px solid var(--clr-royal-blue);
-    background: var(--clr-royal-blue);
-    color: var(--clr-white);
-}
-
-.tag-white {
-    display: flex;
-    padding: 0.15rem 0.5rem 0.2rem 0.5rem;
-    align-items: center;
-    gap: 0.5rem;
-    border-radius: 3rem;
-    border: 1px solid var(--clr-white);
-    background: var(--clr-transparent);
-    color: var(--clr-white);
-}
-
-.tag-black {
-    display: flex;
-    padding: 0.15rem 0.5rem 0.2rem 0.5rem;
-    align-items: center;
-    gap: 0.5rem;
-    border-radius: 3rem;
-    border: 1px solid var(--clr-black-gray);
-    background: var(--clr-transparent);
-    color: var(--clr-black-gray);
-}
-
-.arrow-u-l {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: url("../../public/icons/arrow_U_L.svg") no-repeat center;
-}
-
-.arrow-u-r {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: url("../../public/icons/arrow_U_R.svg") no-repeat center;
-}
-
-.arrow-d-l {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: url("../../public/icons/arrow_D_L.svg") no-repeat center;
-}
-
-.arrow-d-r {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: url("../../public/icons/arrow_D_R.svg") no-repeat center;
-}
+/* REMOVED: tag vertical */
+/* REMOVED: tags */
+/* REMOVED: arrows */
 
 /* CARD PROTOTYPE */
 .card-container {
@@ -555,7 +244,7 @@ section {
     right: 1.5rem;
 }
 
-.card-front .btn-toggle-more {
+.card-front button-toggle-more {
     position: absolute;
     left: 1.5rem;
     bottom: 2.5rem;
@@ -586,7 +275,7 @@ section {
     right: 2rem;
 }
 
-.card-back .btn-toggle-more {
+.card-back button-toggle-less {
     position: absolute;
     left: 1.5rem;
     bottom: 2.5rem;

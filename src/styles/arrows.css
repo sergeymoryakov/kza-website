@@ -1,0 +1,26 @@
+.arrow {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: contain;
+}
+
+/* up-left */
+.arrow-u-l {
+    background: url("../../public/icons/arrow_U_L.svg") no-repeat center;
+}
+
+/* up-right */
+.arrow-u-r {
+    background: url("../../public/icons/arrow_U_R.svg") no-repeat center;
+}
+
+/* down-left */
+.arrow-d-l {
+    background: url("../../public/icons/arrow_D_L.svg") no-repeat center;
+}
+
+/* down-right */
+.arrow-d-r {
+    background: url("../../public/icons/arrow_D_R.svg") no-repeat center;
+}

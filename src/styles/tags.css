@@ -1,0 +1,73 @@
+/* horizontal "hash"-tags */
+.tag {
+    display: flex;
+    padding: 0.15rem 0.5rem 0.2rem 0.5rem;
+    align-items: center;
+    /* gap: 0.5rem; */
+    border-radius: 3rem;
+}
+
+.tag-orange {
+    border: 1px solid var(--clr-fire-red);
+    background: var(--clr-fire-red);
+    color: var(--clr-white);
+}
+
+.tag-blue {
+    border: 1px solid var(--clr-royal-blue);
+    background: var(--clr-royal-blue);
+    color: var(--clr-white);
+}
+
+.tag-white {
+    border: 1px solid var(--clr-white);
+    background: var(--clr-transparent);
+    color: var(--clr-white);
+}
+
+.tag-black {
+    border: 1px solid var(--clr-black-gray);
+    background: var(--clr-transparent);
+    color: var(--clr-black-gray);
+}
+
+/* vertical tag */
+.tag-vertical {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    transform: rotate(
+        180deg
+    ); /* This rotates the text to be the right way up */
+}
+
+.tag-vertical .bracket-left {
+    display: block;
+    width: 9px;
+    height: 16px;
+    background: url("../../public/icons/arrow-blue-left.svg") no-repeat center;
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+.p-tag-vertical {
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.tag-vertical .bracket-right {
+    display: block;
+    width: 9px;
+    height: 16px;
+    background: url("../../public/icons/arrow-blue-right.svg") no-repeat center;
+    transform: rotate(90deg);
+    transform-origin: center;
+}

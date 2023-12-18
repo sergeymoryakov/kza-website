@@ -1,0 +1,65 @@
+.link-toggle-touch-black {
+    background-color: var(--clr-transparent);
+    border: 2px solid var(--clr-black-gray);
+    border-radius: 48px;
+    color: var(--clr-black-gray);
+    padding: 10px 16px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-toggle-touch-black .button-text {
+    margin-right: 40px; /* Space for the toggle */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.link-toggle-touch-black::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 24px;
+    border: 2px solid var(--clr-black-gray);
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.link-toggle-touch-black .toggle-switch {
+    width: 24px;
+    height: 24px;
+    background-color: var(--clr-black-gray);
+    border-radius: 50%;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.link-toggle-touch-black:hover {
+    background-color: var(--clr-transparent);
+    border: 2px solid var(--clr-white);
+}
+
+.link-toggle-touch-black:hover .button-text {
+    color: var(--clr-white);
+}
+
+.link-toggle-touch-black:hover::after {
+    border: 2px solid var(--clr-white);
+}
+
+.link-toggle-touch-black:hover .toggle-switch {
+    background-color: var(--clr-white);
+    transform: translate(14px, -50%);
+}

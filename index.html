@@ -5,6 +5,7 @@
         <link rel="icon" type="image/svg+xml" href="icons/kza-fav.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Karagoz Aviation</title>
+        <link rel="stylesheet" href="./src/styles/index.css" />
     </head>
     <body>
         <h1 class="h1">
@@ -156,18 +157,10 @@
 
         <h4 class="h4">Testing Buttons</h4>
         <div class="test-div-flex-column">
-            <button class="btn-toggle-more">
-                <span class="button-text">get more</span>
-                <span class="toggle-switch"></span>
-            </button>
-            <button class="btn-toggle-touch-black">
-                <span class="button-text">get in touch</span>
-                <span class="toggle-switch"></span>
-            </button>
-            <button class="btn-toggle-touch-white">
-                <span class="button-text">get in touch</span>
-                <span class="toggle-switch"></span>
-            </button>
+            <button-toggle-more></button-toggle-more>
+            <button-toggle-less></button-toggle-less>
+            <link-toggle-touch-black></link-toggle-touch-black>
+            <link-toggle-touch-white></link-toggle-touch-white>
             <button class="btn-touch">
                 <span class="button-text">get in touch</span>
                 <span class="arrow-right"></span>
@@ -179,21 +172,21 @@
 
         <h4 class="h4">Testing Tags</h4>
         <div class="test-div-flex">
-            <div class="tag-orange">
+            <div class="tag tag-orange">
                 <span class="p-body">Sales</span>
             </div>
-            <div class="tag-white">
+            <div class="tag tag-white">
                 <span class="p-body">Business Management</span>
             </div>
-            <div class="tag-black">
+            <div class="tag tag-black">
                 <span class="p-body">Aviation</span>
             </div>
-            <div class="tag-blue">
+            <div class="tag tag-blue">
                 <span class="p-body">Software Development</span>
             </div>
         </div>
 
-        <h4 class="h4">Contact Us</h4>
+        <h4 id="contacts" class="h4">Contact Us</h4>
         <div class="test-div-flex">
             <a href="https://www.linkedin.com/company/karagoz-aviation">
                 <img
@@ -228,10 +221,10 @@
 
         <h4 class="h4">Arrows</h4>
         <div class="test-div-flex">
-            <span class="arrow-u-l"></span>
-            <span class="arrow-u-r"></span>
-            <span class="arrow-d-l"></span>
-            <span class="arrow-d-r"></span>
+            <span class="arrow arrow-u-l"></span>
+            <span class="arrow arrow-u-r"></span>
+            <span class="arrow arrow-d-l"></span>
+            <span class="arrow arrow-d-r"></span>
         </div>
 
         <!-- CARD PROTOTYPE -->
@@ -249,21 +242,14 @@
                             Research, Identification, and Prospecting
                         </h4>
                         <img class="card-icon" src="icons/1-earth.svg" alt="" />
-
-                        <button class="btn-toggle-more">
-                            <span class="button-text">get more</span>
-                            <span class="toggle-switch"></span>
-                        </button>
+                        <button-toggle-more></button-toggle-more>
                     </div>
                     <div class="card-back">
                         <h4 class="h4 ft-light">
                             Research, Identification, and Prospecting
                         </h4>
                         <img class="card-icon" src="icons/1-earth.svg" alt="" />
-                        <button class="btn-toggle-more">
-                            <span class="button-text">get more</span>
-                            <span class="toggle-switch"></span>
-                        </button>
+                        <button-toggle-less></button-toggle-less>
 
                         <div class="card-items">
                             <p class="p-body ft-light">
@@ -282,8 +268,9 @@
             </div>
         </section>
 
-        <div id="app"></div>
+        <!-- <div id="app"></div> -->
 
         <script type="module" src="/src/index.js"></script>
+        <!-- <script defer src="/src/components/ButtonToggleMore.js"></script> -->
     </body>
 </html>

@@ -1,4 +1,9 @@
 import "./styles/index.css";
+import "./components/ButtonToggleLess.js";
+import "./components/ButtonToggleMore.js";
+import "./components/LinkToggleTouchWhite.js";
+import "./components/LinkToggleTouchBlack.js";
+
 import { setupCounter } from "./counter.js";
 
 document.querySelector("#app").innerHTML = `
