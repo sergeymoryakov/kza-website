@@ -1,15 +1,11 @@
 (function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))c(e);new MutationObserver(e=>{for(const n of e)if(n.type==="childList")for(const l of n.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&c(l)}).observe(document,{childList:!0,subtree:!0});function s(e){const n={};return e.integrity&&(n.integrity=e.integrity),e.referrerPolicy&&(n.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?n.credentials="include":e.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function c(e){if(e.ep)return;e.ep=!0;const n=s(e);fetch(e.href,n)}})();const a=document.createElement("template");a.innerHTML=`
-    <style>
-        @import url('src/components/ButtonToggleLess.css');
-    </style>
+    <link rel="stylesheet" href="./src/components/ButtonToggleLess.css">
     <button class="btn-toggle-less">
         <span class="button-text">less</span>
         <span class="toggle-switch"></span>
     </button>
 `;class p extends HTMLElement{constructor(){super(),this.attachShadow({mode:"open"}).appendChild(a.content.cloneNode(!0))}}customElements.define("button-toggle-less",p);const r=document.createElement("template");r.innerHTML=`
-    <style>
-        @import url('./src/components/ButtonToggleMore.css');
-    </style>
+    <link rel="stylesheet" href="./src/components/ButtonToggleMore.css">
     <button class="btn-toggle-more">
         <span class="button-text">more</span>
         <span class="toggle-switch"></span>
