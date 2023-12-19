@@ -1,17 +1,16 @@
-const template = document.createElement("template");
-template.innerHTML = `
-            <link rel="stylesheet" href="src/components/LinkIconTouchWhite.css">
+// NOTE: This custom element does not use shadow DOM,
+// so it shares the same CSS with the rest of the page.
+
+import "/src/components/LinkIconTouchWhite.css";
+
+class LinkIconTouchWhite extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
             <a class="link-icon-touch-white" href="#contacts">
                 <span class="button-text">get in touch</span>
                 <span class="arrow-right"></span>
             </a>
-            `;
-
-class LinkIconTouchWhite extends HTMLElement {
-    constructor() {
-        super();
-        const shadow = this.attachShadow({ mode: "open" });
-        shadow.appendChild(template.content.cloneNode(true));
+        `;
     }
 }
 
