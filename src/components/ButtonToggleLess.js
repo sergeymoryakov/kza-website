@@ -1,23 +1,17 @@
-const template = document.createElement("template");
-template.innerHTML = `
-    <link rel="stylesheet" href="./src/components/ButtonToggleLess.css">
-    <button class="btn-toggle-less">
-        <span class="button-text">less</span>
-        <span class="toggle-switch"></span>
-    </button>
-`;
+// NOTE: This custom element does not use shadow DOM,
+// so it shares the same CSS with the rest of the page.
+
+import "/src/components/ButtonToggleLess.css";
 
 class ButtonToggleLess extends HTMLElement {
-    constructor() {
-        super();
-        const shadow = this.attachShadow({ mode: "open" });
-        shadow.appendChild(template.content.cloneNode(true));
+    connectedCallback() {
+        this.innerHTML = `
+            <button class="btn-toggle-less">
+                <span class="button-text">less</span>
+                <span class="toggle-switch"></span>
+            </button>
+        `;
     }
 }
 
 customElements.define("button-toggle-less", ButtonToggleLess);
-
-// <link rel="stylesheet" href="./src/components/ButtonToggleLess.css">
-// <style>
-//         @import url('../src/components/ButtonToggleLess.css');
-// </style>
