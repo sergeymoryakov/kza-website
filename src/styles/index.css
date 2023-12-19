@@ -6,6 +6,8 @@
 @import "font-styles.css";
 @import "tags.css";
 @import "arrows.css";
+@import "cards.css";
+
 @import "buttons.css";
 @import "components.css";
 
@@ -70,6 +72,7 @@ body {
     margin: 0 auto;
     padding: 0 var(--pd-200);
     max-width: 1440px;
+    min-width: 360px;
     background-color: var(--clr-sky-gray);
 
     display: flex;
