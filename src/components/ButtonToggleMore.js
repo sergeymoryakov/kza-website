@@ -1,8 +1,6 @@
 const template = document.createElement("template");
 template.innerHTML = `
-    <style>
-        @import url('./src/components/ButtonToggleMore.css');
-    </style>
+    <link rel="stylesheet" href="./src/components/ButtonToggleMore.css">
     <button class="btn-toggle-more">
         <span class="button-text">more</span>
         <span class="toggle-switch"></span>
@@ -20,3 +18,6 @@ class ButtonToggleMore extends HTMLElement {
 customElements.define("button-toggle-more", ButtonToggleMore);
 
 // <link rel="stylesheet" href="./src/components/ButtonToggleMore.css">
+// <style>
+//     @import url('components/ButtonToggleLess.css');
+// </style>
