@@ -52,10 +52,14 @@
     background: var(--white-gray, #cad0d6);
     /* align background image to the card's bottom */
     background-position: right bottom;
-    background-image: url("../../public/images/4-card.png");
+    background-image: url("../../public/images/6-card.png");
     background-repeat: no-repeat;
 }
 
+.card-container:nth-child(even) .card-front {
+    background-color: var(--clr-black-gradient);
+    color: var(--clr-white);
+}
 /* 
 .card-front .card-image {
     position: absolute;
@@ -97,10 +101,7 @@
 }
 
 .card-back {
-    background: var(
-        --Linear,
-        linear-gradient(146deg, #151515 6.46%, #2c2c2c 53.91%, #000 90.82%)
-    );
+    background-color: var(--clr-black-gradient);
 
     transform: rotateY(180deg);
 
