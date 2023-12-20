@@ -13,6 +13,18 @@ section {
     justify-content: center;
 }
 
+.section-transparent {
+    background: var(--clr-transparent);
+}
+
+.section-dark {
+    background: var(--clr-black-gray);
+}
+
+.section-blue {
+    background: var(--clr-royal-blue);
+}
+
 .card {
     padding: 0.5rem;
 }

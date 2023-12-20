@@ -1,6 +1,6 @@
 @import "reset.css";
 
-@import "ui-kit.css";
+@import "ui-kit.css"; /* support file - remove for production */
 
 @import "font-family-gsv.css";
 @import "font-styles.css";
@@ -8,7 +8,7 @@
 @import "arrows.css";
 @import "cards.css";
 
-@import "buttons.css";
+@import "buttons.css"; /* support file - remove for production */
 @import "components.css";
 
 :root {
