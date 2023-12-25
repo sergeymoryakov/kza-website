@@ -52,7 +52,7 @@
     background: var(--white-gray, #cad0d6);
     /* align background image to the card's bottom */
     background-position: right bottom;
-    background-image: url("../../public/images/6-card.png");
+    /* background-image: url("../../public/images/6-card.png"); */
     background-repeat: no-repeat;
 }
 
