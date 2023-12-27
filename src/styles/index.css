@@ -70,12 +70,20 @@
 
 body {
     margin: 0 auto;
-    padding: 0 var(--pd-200);
+    /* padding: 0 var(--pd-200); */
     max-width: 1440px;
     min-width: 360px;
     background-color: var(--clr-sky-gray);
 
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* place-items: center; */
+}
+
+/* development (dev) components - remove in production */
+
+.dev-link {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px dashed red;
 }
