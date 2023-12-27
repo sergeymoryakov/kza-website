@@ -8,7 +8,78 @@
         <link rel="stylesheet" href="./src/styles/index.css" />
     </head>
     <body>
-        <a class="dev-link" href="./ui-kit.html">UI Kit Here</a>
+        <section id="header">
+            <div class="header-title">
+                <h1 class="h1">
+                    Vast <span class="ft-hl-blue">Experience </span><br />in
+                    Aviation
+                </h1>
+            </div>
+            <div class="header-wrapper">
+                <div class="header-visual">
+                    <img
+                        class="circle"
+                        src="/public/images/circle.svg"
+                        alt="circle"
+                    />
+                    <video class="image-3d" autoplay loop muted playsinline>
+                        <source
+                            src="/public/models/aircraft-hevc-safari.mp4"
+                            type='video/mp4; codecs="hvc1"'
+                            alt="3D Aircraft"
+                        />
+                        <source
+                            src="/public/models/aircraft-vp9-chrome.webm"
+                            type="video/webm"
+                            alt="3D Aircraft"
+                        />
+                    </video>
+
+                    <div class="tag-vertical">
+                        <span class="bracket-left"></span>
+                        <span class="p-tag-vertical">widebody aircraft</span>
+                        <span class="bracket-right"></span>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <div class="header-info__tags-flex">
+                        <div class="tag tag-orange">
+                            <span class="p-body">Sales</span>
+                        </div>
+                        <div class="tag tag-black">
+                            <span class="p-body">Marketing</span>
+                        </div>
+                        <div class="tag tag-black">
+                            <span class="p-body">Business Development</span>
+                        </div>
+                    </div>
+                    <div class="header-info__body">
+                        <div class="header-info__body_left">
+                            <p class="p-body-bold">About</p>
+                        </div>
+                        <div class="header-info__body_right">
+                            <p class="p-body">
+                                Karagoz Aviation is a private company
+                                specialized in promoting aviation sales and
+                                business development projects in Central Asia
+                                and Middle-East.
+                            </p>
+                            <p class="p-body">
+                                We are a team of professionals with vast
+                                experience in aviation and successful careers in
+                                Fortune 500 companies - Boeing, GE, and Textron.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- development code - remove in prod -->
+        <section id="development">
+            <a class="dev-link" href="./ui-kit.html">UI Kit Here</a>
+        </section>
+        <!-- development code ends here -->
 
         <script type="module" src="./src/index.js"></script>
     </body>

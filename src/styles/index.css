@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "section-header.css";
 
 @import "ui-kit.css"; /* support file - remove for production */
 
@@ -23,6 +24,7 @@
     --clr-black: hsl(0, 0%, 11%); /* #1d1d1d; - black */
     --clr-white: hsl(0, 0%, 100%); /* #ffffff; - white */
     --clr-medium-gray: hsl(0, 0%, 74%); /* #bdbdbd; - medium-gray */
+    --clr-dark-gray: hsla(0, 0%, 50%, 1); /* #7E7E7E; - dark-gray */
     --clr-transparent: hsla(0, 0%, 0%, 0); /* transparent */
 
     /* gradients */
@@ -81,9 +83,8 @@ body {
 }
 
 /* development (dev) components - remove in production */
-
-.dev-link {
-    margin: 1rem;
-    padding: 1rem;
+#development {
+    display: block;
     border: 1px dashed red;
+    padding: 1rem;
 }

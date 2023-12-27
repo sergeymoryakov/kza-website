@@ -1,0 +1,90 @@
+#header {
+    padding: 0 clamp(1rem, 3vw, 4rem);
+
+    /* development */
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+}
+
+.header-title {
+    margin-top: clamp(8.5rem, 21.3vw, 9.5rem);
+    margin-bottom: clamp(5.5rem, 13.8vw, 8rem);
+}
+
+.header-visual {
+    width: 100%;
+
+    height: clamp(10rem, 25vw, 20rem);
+    position: relative;
+
+    /* development */
+    border: 1px dashed red;
+}
+
+.header-visual video {
+    width: 110%;
+    max-height: 120%;
+
+    object-fit: contain;
+    position: absolute;
+    right: -10%;
+    bottom: 20%;
+}
+
+.circle {
+    width: clamp(16rem, 40vw, 40rem);
+    height: clamp(16rem, 40vw, 40rem);
+    position: absolute;
+    right: -3rem;
+    bottom: 1.5rem;
+
+    /* development */
+    border: 1px dashed red;
+}
+
+.header-visual .tag-vertical {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.header-info {
+    margin-bottom: clamp(3rem, 7.5vw, 5rem);
+    max-width: 26rem;
+}
+
+.header-info__tags-flex {
+    margin-bottom: clamp(2.38rem, 5.9vw, 3.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.header-info__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: clamp(2.88rem, 7.2vw, 4.31rem);
+}
+
+.header-info__body_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: clamp(1.88rem, 4.7vw, 2.38rem);
+}
+
+@media (min-width: 992px) {
+    .header-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .header-visual .tag-vertical {
+        top: -50%;
+        left: 65%;
+    }
+}

@@ -33,9 +33,10 @@
 
 /* vertical tag */
 .tag-vertical {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
+    /* set position in appropriate section: */
+    /* position: absolute; */
+    /* top: 2rem; */
+    /* right: 2rem; */
     display: flex;
     flex-direction: row;
     align-items: center;
