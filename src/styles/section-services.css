@@ -1,7 +1,7 @@
 #services {
     margin: 0 1rem;
     padding-top: clamp(7.5rem, 14vw, 9.5rem);
-    padding-inline: clamp(1rem, 3.5vw, 5rem);
+    padding-inline: clamp(1rem, 3.5vw, 3rem);
     padding-bottom: clamp(1rem, 10.6vw, 11rem);
 
     width: auto;

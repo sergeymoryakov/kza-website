@@ -1,0 +1,17 @@
+#about {
+    margin: 0 1rem;
+    padding-top: clamp(6rem, 14vw, 12rem);
+    padding-inline: clamp(1rem, 3.5vw, 3rem);
+    padding-bottom: clamp(5.5rem, 10.6vw, 7rem);
+
+    width: auto;
+
+    background-color: var(--clr-royal-blue);
+    border-radius: var(--br-32);
+    color: var(--clr-white);
+
+    display: flex;
+    flex-direction: column;
+
+    height: 30rem;
+}
