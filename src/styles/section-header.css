@@ -8,6 +8,7 @@
 .header-title {
     margin-top: clamp(8.5rem, 21.3vw, 9.5rem);
     margin-bottom: clamp(5.5rem, 13.8vw, 8rem);
+    z-index: 200;
 }
 
 .header-visual {
@@ -23,6 +24,7 @@
     position: absolute;
     right: -10%;
     bottom: 55%;
+    z-index: 500;
 }
 
 .circle {
@@ -31,6 +33,7 @@
     position: absolute;
     right: -3rem;
     bottom: 1.5rem;
+    z-index: 100;
 }
 
 .header-visual .tag-vertical {

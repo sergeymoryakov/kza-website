@@ -1,0 +1,29 @@
+#services {
+    margin: 0 1rem;
+    padding-top: clamp(7.5rem, 14vw, 9.5rem);
+    padding-inline: (1rem, 3.5vw, 3rem);
+    padding-bottom: clamp(1rem, 10.6vw, 11rem);
+
+    width: auto;
+
+    background-color: var(--clr-black-gray);
+    border-radius: var(--br-32);
+    color: var(--clr-white);
+
+    display: flex;
+    flex-direction: column;
+
+    /* development */
+    gap: 4rem;
+}
+
+/* development */
+#services video {
+    width: 80;
+    max-height: 80%;
+    object-fit: contain;
+    /* position: absolute; */
+    /* right: -10%; */
+    /* bottom: 55%; */
+    /* z-index: 500; */
+}
