@@ -81,3 +81,8 @@
 #services .orange-line {
     margin-bottom: 5rem;
 }
+
+.services-include {
+    margin-bottom: clamp(2rem, 8vw, 8rem);
+    color: var(--clr-white);
+}
