@@ -28,7 +28,7 @@
     z-index: 500;
 }
 
-.circle {
+.header-circle {
     width: clamp(16rem, 40vw, 40rem);
     height: clamp(16rem, 40vw, 40rem);
     position: absolute;
@@ -86,7 +86,7 @@
         grid-row: 1 / 2;
     }
 
-    .circle {
+    .header-circle {
         top: -40%;
         right: 2.5rem;
     }

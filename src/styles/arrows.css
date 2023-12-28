@@ -1,5 +1,5 @@
 .arrow {
-    display: block;
+    display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
     background-size: contain;
@@ -23,4 +23,13 @@
 /* down-right */
 .arrow-d-r {
     background: url("../../public/icons/arrow_D_R.svg") no-repeat center;
+}
+
+/* block size variable: */
+.arrow-d-r--h2 {
+    display: inline-block;
+    width: clamp(1.5rem, 4.5vw, 3.5rem);
+    height: clamp(1.5rem, 4.5vw, 3.5rem);
+    background: url("../../public/icons/arrow_large_D_R.svg") no-repeat center;
+    background-size: contain;
 }

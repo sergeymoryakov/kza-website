@@ -1,4 +1,6 @@
 .link-toggle-touch-black {
+    width: fit-content;
+    height: fit-content;
     background-color: var(--clr-transparent);
     border: 2px solid var(--clr-black-gray);
     border-radius: 48px;
