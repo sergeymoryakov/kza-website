@@ -1,9 +1,21 @@
 #engage {
     padding: 0 clamp(1rem, 3vw, 4rem);
     position: relative;
-    background: url("../../public/images/aircraft2_l.png") no-repeat right
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#engage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../../public/images/aircraft2_s.png") no-repeat right
         bottom;
-    background-size: 90vw;
+    background-size: contain;
+    z-index: 200;
 }
 
 .engage-grid {
@@ -12,27 +24,43 @@
     display: grid;
 }
 
+.engage-grid__item-2 {
+    max-width: 65%;
+}
+
 .engage-grid__item-3 {
     padding-top: 2.5rem;
 }
 
 .engage-circle {
-    width: clamp(16rem, 40vw, 40rem);
-    height: clamp(16rem, 40vw, 40rem);
+    width: clamp(25rem, 40vw, 40rem);
+    height: clamp(25rem, 40vw, 40rem);
     position: absolute;
-    bottom: 0%;
-    right: 0%;
-    /* z-index: 100; */
+    right: -8rem;
+    bottom: -5rem;
+    z-index: 100;
 }
 
-@media (min-width: 800px) {
-    #engage {
-        background: url("../../public/images/aircraft2_s.png") no-repeat right
+@media (min-width: 600px) {
+    #engage::before {
+        background: url("../../public/images/aircraft2_l.png") no-repeat right
             bottom;
+        background-size: 110vw;
+        background-size: cover;
     }
+    .engage-circle {
+        right: -4rem;
+        bottom: 0rem;
+    }
+}
 
+@media (min-width: 768px) {
+    #engage::before {
+        background-size: 90vw;
+        background-size: contain;
+    }
     .engage-grid {
-        grid-template-columns: 25% 65% 1fr;
+        grid-template-columns: 30% 65% 1fr;
     }
 
     .engage-grid__item-1 {
@@ -41,6 +69,7 @@
     }
 
     .engage-grid__item-2 {
+        max-width: none;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
@@ -48,5 +77,9 @@
     .engage-grid__item-3 {
         display: flex;
         align-items: flex-end;
+    }
+    .engage-circle {
+        right: -5rem;
+        bottom: -1rem;
     }
 }
