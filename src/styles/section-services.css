@@ -1,29 +1,83 @@
 #services {
     margin: 0 1rem;
     padding-top: clamp(7.5rem, 14vw, 9.5rem);
-    padding-inline: (1rem, 3.5vw, 3rem);
+    padding-inline: clamp(1rem, 3.5vw, 5rem);
     padding-bottom: clamp(1rem, 10.6vw, 11rem);
 
     width: auto;
 
     background-color: var(--clr-black-gray);
     border-radius: var(--br-32);
-    color: var(--clr-white);
 
     display: flex;
     flex-direction: column;
-
-    /* development */
-    gap: 4rem;
 }
 
-/* development */
-#services video {
-    width: 80;
-    max-height: 80%;
+.services-header-grid {
+    margin-bottom: clamp(6rem, 14vw, 10rem);
+    color: var(--clr-white);
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+}
+
+.services-header-grid__block-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-header-grid__block-3 video {
+    width: 80%;
+    max-width: 20rem;
     object-fit: contain;
-    /* position: absolute; */
-    /* right: -10%; */
-    /* bottom: 55%; */
-    /* z-index: 500; */
+}
+
+.services-header-grid__block-4 {
+    max-width: 26rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.services-header-grid__block-4 p {
+    margin-left: clamp(4rem, 9vw, 7rem);
+    position: relative;
+}
+
+.services-header-grid__block-4 p::before {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 16px;
+    background: url("../../public/icons/arrow-orange-right.svg") no-repeat
+        center;
+    position: absolute;
+    margin-left: clamp(-3.5rem, 9vw, -6.5rem);
+    top: 0rem;
+}
+
+@media (min-width: 800px) {
+    .services-header-grid {
+        grid-template-columns: 1fr 60%;
+        grid-template-rows: auto auto;
+        column-gap: 2rem;
+        row-gap: 0.5rem;
+    }
+
+    .services-header-grid__block-1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .services-header-grid__block-2 {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+}
+
+#services .orange-line {
+    margin-bottom: 5rem;
 }
