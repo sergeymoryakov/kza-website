@@ -14,7 +14,7 @@
                 <span class="toggle-switch"></span>
             </a>
         `}}customElements.define("link-toggle-touch-white",d);class g extends HTMLElement{connectedCallback(){this.innerHTML=`
-            <a class="link-toggle-touch-black" href="#contacts">
+            <a class="link-toggle-touch-black" href="#getintouch">
                 <span class="button-text">get in touch</span>
                 <span class="toggle-switch"></span>
             </a>
@@ -24,7 +24,7 @@
                 <span class="arrow-right"></span>
             </a>
         `}}customElements.define("link-icon-touch-white",p);class u extends HTMLElement{connectedCallback(){this.innerHTML=`
-            <a class="link-home-white" href="#contacts">
+            <a class="link-home-white" href="#header">
                 <span class="button-text">up to home</span>
             </a>
         `}}customElements.define("link-home-white",u);class m extends HTMLElement{static get observedAttributes(){return["title","icon","image","text"]}attributeChangedCallback(t,o,n){switch(t){case"title":this._title=n;break;case"icon":this._icon=n;break;case"image":this._image=n;break;case"text":this._text=JSON.parse(n);break}}connectedCallback(){this.classList.add("card-container"),this.innerHTML=`
