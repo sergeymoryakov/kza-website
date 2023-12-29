@@ -6,7 +6,7 @@ import "/src/components/LinkHomeWhite.css";
 class LinkHomeWhite extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <a class="link-home-white" href="#contacts">
+            <a class="link-home-white" href="#header">
                 <span class="button-text">up to home</span>
             </a>
         `;

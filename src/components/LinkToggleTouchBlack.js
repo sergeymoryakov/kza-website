@@ -6,7 +6,7 @@ import "/src/components/LinkToggleTouchBlack.css";
 class LinkToggleTouchBlack extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <a class="link-toggle-touch-black" href="#contacts">
+            <a class="link-toggle-touch-black" href="#getintouch">
                 <span class="button-text">get in touch</span>
                 <span class="toggle-switch"></span>
             </a>

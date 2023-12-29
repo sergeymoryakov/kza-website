@@ -33,3 +33,11 @@
     background: url("../../public/icons/arrow_large_D_R.svg") no-repeat center;
     background-size: contain;
 }
+
+.arrow-u-r--h2 {
+    display: inline-block;
+    width: clamp(1.5rem, 4.5vw, 3.5rem);
+    height: clamp(1.5rem, 4.5vw, 3.5rem);
+    background: url("../../public/icons/arrow_large_U_R.svg") no-repeat center;
+    background-size: contain;
+}
