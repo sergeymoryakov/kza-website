@@ -1,0 +1,55 @@
+#getintouch {
+    padding: 0 clamp(1rem, 3vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.git-grid {
+    margin-top: clamp(4.5rem, 12vw, 9.5rem);
+    margin-bottom: clamp(3rem, 8vw, 4rem);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: clamp(3.5rem, 9vw, 6rem);
+}
+
+.git-grid__visual {
+    width: 100%;
+}
+
+.git-grid__visual video {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.git-grid__contacts {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.git-grid__contacts h2 {
+    margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+    .git-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .git-grid__visual {
+        max-width: 37rem;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .git-grid__contacts {
+        max-width: 37rem;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
