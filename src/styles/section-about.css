@@ -5,6 +5,7 @@
     padding-bottom: clamp(5.5rem, 10.6vw, 7rem);
 
     width: auto;
+    height: auto;
 
     background-color: var(--clr-royal-blue);
     border-radius: var(--br-32);
@@ -12,6 +13,16 @@
 
     display: flex;
     flex-direction: column;
+}
 
-    height: 30rem;
+.about-title {
+    margin-bottom: clamp(2.5rem, 5.5vw, 6.5rem);
+    text-align: right;
+}
+
+.about__tags-flex {
+    margin-bottom: clamp(2.38rem, 5.9vw, 3.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
