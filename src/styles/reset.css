@@ -128,3 +128,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* added 2023-12-30 */
+button,
+button::before,
+button::after {
+    font-family: inherit;
+}
