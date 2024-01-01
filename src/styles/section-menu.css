@@ -4,7 +4,7 @@
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 100% - 2rem;
+    width: calc(100% - 2rem);
     max-width: calc(1440px - 2rem);
     z-index: 1000;
 
@@ -34,7 +34,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 #menu a {
