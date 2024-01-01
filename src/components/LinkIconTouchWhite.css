@@ -1,4 +1,6 @@
 .link-icon-touch-white {
+    width: fit-content;
+    height: fit-content;
     background-color: var(--clr-transparent);
     border: 2px solid var(--clr-white);
     border-radius: 48px;

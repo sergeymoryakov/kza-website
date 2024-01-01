@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "section-menu.css";
 @import "section-header.css";
 @import "section-services.css";
 @import "section-engage.css";
@@ -86,6 +87,7 @@ body {
     /* display: flex; */
     /* flex-direction: column; */
     /* place-items: center; */
+    /* position: relative; */
 }
 
 /* development (dev) components - remove in production */

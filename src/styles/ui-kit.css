@@ -19,6 +19,7 @@ section {
 
 .section-dark {
     background: var(--clr-black-gray);
+    color: var(--clr-white);
 }
 
 .section-blue {
