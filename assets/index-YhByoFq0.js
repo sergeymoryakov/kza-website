@@ -19,7 +19,7 @@
                 <span class="toggle-switch"></span>
             </a>
         `}}customElements.define("link-toggle-touch-black",g);class p extends HTMLElement{connectedCallback(){this.innerHTML=`
-            <a class="link-icon-touch-white" href="#contacts">
+            <a class="link-icon-touch-white" href="#getintouch">
                 <span class="button-text">get in touch</span>
                 <span class="arrow-right"></span>
             </a>
