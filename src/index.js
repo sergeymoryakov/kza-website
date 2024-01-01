@@ -11,6 +11,13 @@ import { cardsData } from "./components/cardsData.js";
 import { setupCounter } from "./counter.js";
 
 const cardsGrid = document.getElementById("cardsGrid");
+const burgerNode = document.querySelector(".menu-burger");
+
+// Event Listener for Burger Menu
+burgerNode.addEventListener("click", function () {
+    // Toggle the 'active' class on both the 'menu-burger'
+    burgerNode.classList.toggle("active");
+});
 
 // for TBS only - remove in PROD
 console.log(cardsData);
