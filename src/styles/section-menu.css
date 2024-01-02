@@ -6,29 +6,33 @@
     transform: translateX(-50%);
     width: calc(100% - 2rem);
     max-width: calc(1440px - 2rem);
+    min-width: calc(360px - 2rem);
     z-index: 1000;
 
     background: var(--clr-black);
     border-radius: var(--br-18);
     color: var(--clr-white);
+}
 
+.menu-top {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-#menu img {
+.menu-top img {
     height: 27px;
     width: auto;
 }
 
-.menu-links {
+.menu-top__links {
     display: none;
 }
 
 @media (min-width: 576px) {
-    .menu-links {
+    .menu-top__links {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -36,12 +40,12 @@
         gap: clamp(1rem, 3vw, 4.5rem);
     }
 
-    .menu-links a {
+    .menu-top__links a {
         color: var(--clr-white);
         text-decoration: none;
     }
 
-    .menu-links a:hover {
+    .menu-top__links a:hover {
         color: var(--clr-royal-blue);
     }
 }
@@ -102,4 +106,74 @@
 .menu-burger.active::after {
     transform: rotate(-45deg);
     top: 50%;
+}
+
+.menu-dropdown-wrapper {
+    display: none;
+}
+
+.menu-dropdown-wrapper.active {
+    display: block;
+}
+
+.menu-dropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu-dropdown__image {
+    max-width: 50%;
+    display: none;
+}
+
+.menu-dropdown img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu-dropdown__text {
+    padding: 6rem 3rem 3rem 0;
+}
+
+.menu-dropdown__links {
+    margin-bottom: 8rem;
+}
+
+.menu-dropdown__socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .menu-dropdown {
+        justify-content: space-between;
+    }
+
+    .menu-dropdown__image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.menu-dropdown__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    gap: 3rem;
+}
+
+.menu-dropdown__links a {
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.menu-dropdown__links a:hover {
+    color: var(--clr-royal-blue);
 }

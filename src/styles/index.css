@@ -90,6 +90,11 @@ body {
     /* position: relative; */
 }
 
+/* fix content while dropdown menu is open */
+.body-fixed {
+    overflow: hidden;
+}
+
 /* development (dev) components - remove in production */
 #development {
     display: block;

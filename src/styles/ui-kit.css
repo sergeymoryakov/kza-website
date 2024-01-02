@@ -6,12 +6,12 @@
     text-align: center;
 }
 
-section {
+/* section {
     padding: 1rem;
     width: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 
 .section-transparent {
     background: var(--clr-transparent);

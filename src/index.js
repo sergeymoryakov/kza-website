@@ -12,11 +12,13 @@ import { setupCounter } from "./counter.js";
 
 const cardsGrid = document.getElementById("cardsGrid");
 const burgerNode = document.querySelector(".menu-burger");
+const dropdownNode = document.querySelector(".menu-dropdown-wrapper");
 
 // Event Listener for Burger Menu
 burgerNode.addEventListener("click", function () {
     // Toggle the 'active' class on both the 'menu-burger'
     burgerNode.classList.toggle("active");
+    dropdownNode.classList.toggle("active");
 });
 
 // for TBS only - remove in PROD
