@@ -31,6 +31,10 @@
     display: none;
 }
 
+.menu-top__links.hide {
+    display: none;
+}
+
 @media (min-width: 576px) {
     .menu-top__links {
         display: flex;
@@ -56,6 +60,10 @@
     justify-content: space-between;
     align-items: center;
     gap: clamp(1rem, 3vw, 2.5rem);
+}
+
+#menuBtnGetintouch.hide {
+    display: none;
 }
 
 .menu-burger {
@@ -141,12 +149,18 @@
     margin-bottom: 8rem;
 }
 
+.menu-dropdown__socials-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 .menu-dropdown__socials {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    gap: clamp(1rem, 3vw, 2.5rem);
 }
 
 @media (min-width: 768px) {
