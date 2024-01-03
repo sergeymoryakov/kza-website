@@ -146,22 +146,26 @@
 }
 
 .menu-dropdown__links {
-    margin-bottom: 8rem;
+    margin-bottom: clamp(3rem, 3vw, 5rem);
 }
 
+/* 
 .menu-dropdown__socials-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-}
+} 
+*/
 
+/* 
 .menu-dropdown__socials {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: clamp(1rem, 3vw, 2.5rem);
-}
+} 
+*/
 
 @media (min-width: 768px) {
     .menu-dropdown {
