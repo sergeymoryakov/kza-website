@@ -22,6 +22,7 @@
     margin-top: clamp(6.5rem, 15vw, 8.5rem);
     margin-bottom: clamp(19.5rem, 40vw, 22.5rem);
     display: grid;
+    position: relative;
     z-index: 300;
 }
 
