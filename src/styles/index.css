@@ -76,6 +76,10 @@
     color: var(--clr-black);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 auto;
     padding-bottom: 1rem;
