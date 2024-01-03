@@ -95,7 +95,7 @@ export const cardsData = [
     },
     {
         id: 11,
-        title: "Comprehensive Record-Keeping",
+        title: "Record Keeping",
         icon: "11-record.svg",
         image: "11-card.png",
         text: [

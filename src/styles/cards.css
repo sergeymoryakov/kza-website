@@ -46,6 +46,10 @@
     top: 0;
     left: 0;
     border-radius: 2.5rem;
+
+    /* solve toggle switch button visibility */
+    transition: visibility 0s linear 0.25s, transform 0.5s linear;
+    backface-visibility: hidden;
 }
 
 .card-front {
@@ -198,4 +202,13 @@
 
 .card.flipped {
     transform: rotateY(180deg);
+}
+
+.card.flipped .card-front {
+    visibility: hidden;
+}
+
+.card.flipped .card-back {
+    visibility: visible;
+    transition-delay: 0s;
 }
