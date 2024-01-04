@@ -5,8 +5,8 @@
         <link rel="icon" type="image/svg+xml" href="icons/kza-fav.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Karagoz Aviation</title>
-      <script type="module" crossorigin src="/kza-mobile/assets/index-wbMhLRVQ.js"></script>
-      <link rel="stylesheet" crossorigin href="/kza-mobile/assets/index-cje-uqVD.css">
+      <script type="module" crossorigin src="/kza-mobile/assets/index-mgKqBVdN.js"></script>
+      <link rel="stylesheet" crossorigin href="/kza-mobile/assets/index-AOSk0Xug.css">
     </head>
     <body>
         <section id="menu">
@@ -415,7 +415,10 @@
                 </div>
 
                 <div class="footer-legal-wrapper">
-                    <button class="footer-legal-btn p-body-small">
+                    <button
+                        id="modalOpenBtn"
+                        class="footer-legal-btn p-body-small"
+                    >
                         Copyright Notice and<br />
                         Privacy Policy
                     </button>
@@ -476,12 +479,14 @@
         </section>
 
         <section id="modal">
-            <!-- New CSS Section to cover Popup Order Button  -->
-            <div class="js-popup popup-order">
-                <div class="js-popup-order-content popup-order-content">
-                    <button class="js-btn-order-close btn-order-close">
-                        <img src="icons/vector-close-black.svg" alt="Close" />
-                    </button>
+            <div id="modalWindow" class="modal-window">
+                <div id="modalWindowContent" class="modal-window__content">
+                    <div class="button-line">
+                        <button
+                            id="modalCloseBtn"
+                            class="modal-window__close-btn"
+                        ></button>
+                    </div>
                     <div class="privacy-content">
                         <h3>Copyright Notice</h3>
                         <p>
@@ -774,10 +779,9 @@
         </section>
 
         <!-- development code - remove in prod -->
-        <section id="development">
+        <!-- <section id="development">
             <a class="dev-link" href="./ui-kit.html">UI Kit Here</a>
-            <button class="js-btn-order btn-order">Privacy statement</button>
-        </section>
+        </section> -->
         <!-- development code ends here -->
 
     </body>
