@@ -1,10 +1,10 @@
-Copyright notice
+Copyright Notice
 
-© 2023 Karagoz Aviation LLC. All Rights Reserved.
+© 2024 Karagoz Aviation LLC. All Rights Reserved.
 
 Privacy Policy
 
-At our website, accessible via link, we are committed to protecting the privacy of our visitors. This website acts in accordance with the Personal Information Protection and Electronic Documents Act (PIPEDA) and other applicable laws.
+At our website, accessible via https://karagozaviation.com/, we are committed to protecting the privacy of our visitors. This website acts in accordance with the Personal Information Protection and Electronic Documents Act (PIPEDA) and other applicable laws.
 
 This Privacy Policy explains what personal information we collect online, how we use and protect it and in which circumstances this information can be disclosed. 
 
@@ -18,12 +18,10 @@ We can collect the following personal data when you interact with this website:
 
 First and last name;
 Email address; 
-Comments;
-Or any other optional information you choose to provide us, e.g. such as phone number, your address etc. 
+Comments; or
+Any other optional information you choose to provide us, e.g. such as phone number, your address etc. 
 
 You consent to provide us this information by fulfilling our contact forms. 
-
-Если на сайте необходимо будет создавать аккаунты, то надо будет добавить соответствующую информацию.
 
 3. How we use the information provided by you
 
@@ -33,17 +31,16 @@ To contact you by email and/or by telephone calls;
 To provide you with information about our goods and services; 
 To manage your request; 
 To improve our products and services and introduce new ones; 
-To optimise our Website; 
+To optimize our website; 
 To comply with our legal obligations.
 
-Проверить полный ли список, надо ли что-то добавить?
 4. Disclosure of your personal data to third parties
 
 By this Privacy Policy we guarantee you not to sell your personal data to other companies. 
 
 The personal data provided by you may be disclosed only in the following cases: 
 
-You authorise such disclosure; 
+You authorize such disclosure; 
 To help to conduct transactions for you;
 This information can be shared with our agents, acting legally on our behalf  (e.g. website hosting etc.); 
 To comply with our legal obligations; 
@@ -58,9 +55,7 @@ To ensure the safety of Users of our Website.
 
 This Website uses your 'cookies' about your activities on this Website. These 'cookies' represent small blocks of data, created when you browse this website. 'Cookies' help to identify your preferences.
 
-By using this website you authorise the usage of your 'cookies'. 
-
-Сайт работает без cookies? Их можно отключить? Если да, то надо описать как
+By using this website you authorize the usage of your 'cookies'. 
 
 6. Log Data 
 
@@ -72,15 +67,15 @@ Please note, that this information doesn’t serve to personally identify you. T
 
 The security and confidentiality of your personal data is our priority. 
 
-To protect your personal data we have limited the collection of personal data we reasonably need to conduct our business activities (section 2), for purposes clearly defined (section 3) and by authorised employees respecting your confidentiality.
+To protect your personal data we have limited the collection of personal data we reasonably need to conduct our business activities (section 2), for purposes clearly defined (section 3) and by authorized employees respecting your confidentiality.
 
-Be sure we implement reasonable technological to protect your personal information. However, please note, that no website can completely guarantee the security of your personal data.
+Be sure we implement reasonable technology to protect your personal information. However, please note that no website can completely guarantee the security of your personal data.
 
 8. Links to the websites of the third parties 
 
-This website may contain links to the websites of the third parties. We have no responsibility for their Privacy Policy. 
+This website may contain links to the websites of third parties. We have no responsibility for their Privacy Policy. 
 
-We highly recommend you to familiarise with the Privacy Policies of websites you choose to visit before providing them with your personal information. 
+We highly recommend you to familiarize yourself with the Privacy Policies of websites you choose to visit before providing them with your personal information. 
 
 9. Children’s personal information
 
@@ -95,7 +90,7 @@ To access your personal information;
 To request the correction of your personal information;
 To withdraw your consent to the collection, use or disclosure of your personal information by us.
 
-To exercise these rights at any time do not hesitate to contact us by mail.
+To exercise these rights at any time do not hesitate to contact us by email business@karagozaviation.com.
 We are committed to provide you an answer in less than 30 (thirty) days.
   
 11. Changes to Privacy Policy
@@ -106,9 +101,9 @@ We encourage you to check this webpage from time to time to keep up-to-date with
 
 12. To contact us
 
-Do not hesitate to contact us in case of questions on our Privacy Policy by email email. 
+Do not hesitate to contact us in case of questions on our Privacy Policy by email business@karagozaviation.com. 
 
-Last update: date
+Last update: January 4th, 2024.
 
 Legal Disclaimer
 

@@ -6,6 +6,7 @@
 @import "section-about.css";
 @import "section-getintouch.css";
 @import "section-footer.css";
+@import "section-modal.css";
 
 @import "ui-kit.css"; /* support file - remove for production */
 
