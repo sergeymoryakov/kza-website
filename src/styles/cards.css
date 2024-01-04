@@ -20,9 +20,6 @@
 .card-container {
     width: 100%;
     perspective: 1000px;
-
-    /* FOR TEST-TBS / remove in prod: */
-    /* border: 1px dashed greenyellow; */
 }
 
 .card {
@@ -64,39 +61,17 @@
     background-color: var(--clr-black-gradient);
     color: var(--clr-white);
 }
-/* 
-.card-front .card-image {
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-} 
-*/
 
 .card-front__top-grid {
     width: 100%;
     display: inline-grid;
     grid-template-columns: auto 4rem;
     gap: 1.5rem;
-
-    /* FOR TEST-TBS / remove in prod: */
-    /* border: 1px dashed greenyellow; */
 }
 
 .card-front__top-grid .h4 {
     max-width: 15rem;
-    /* width: clamp(15rem, 16.6vw, 60%);
-    position: absolute;
-    top: 2rem;
-    left: 1.5rem; */
 }
-
-/* 
-.card-front .card-icon {
-    position: absolute;
-    top: 2rem;
-    right: 1.5rem;
-}
- */
 
 .card-front button-toggle-more {
     position: absolute;
@@ -120,24 +95,15 @@
     display: inline-grid;
     grid-template-columns: auto 3rem;
     gap: 1.5rem;
-
-    /* FOR TEST-TBS / remove in prod: */
-    /* border: 1px dashed greenyellow; */
 }
 
 .card-back__top-grid .h4 {
     max-width: 15rem;
-    /* position: absolute;
-    top: 2rem;
-    left: 1.5rem; */
 }
 
 .card-back__top-grid .card-icon {
     width: 3rem;
     height: 3rem;
-    /* position: absolute;
-    top: 2.5rem;
-    right: 2rem; */
 }
 
 .card-back__bottom-flex {
@@ -145,12 +111,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* row-gap: 0rem; */
     flex-wrap: wrap-reverse;
-    /* column-gap: 1rem; */
-
-    /* FOR TEST-TBS / remove in prod: */
-    /* border: 1px dashed greenyellow; */
 }
 
 .card-back__bottom-flex .card-button-wrapper {
@@ -158,16 +119,7 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-
-    /* FOR TEST-TBS / remove in prod: */
-    /* border: 1px dashed blue; */
 }
-
-/* .card-back button-toggle-less {
-    position: absolute;
-    left: 1.5rem;
-    bottom: 2.5rem;
-} */
 
 .card-back__bottom-flex .card-items {
     padding-top: 1rem;
@@ -175,12 +127,6 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    /* position: absolute;
-    right: 1.5rem;
-    bottom: 2.5rem; */
-
-    /* FOR TEST-TBS / remove in prod: */
-    /* border: 1px dashed red; */
     padding-left: 1.5rem;
 }
 

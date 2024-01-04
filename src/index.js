@@ -6,10 +6,11 @@ import "./components/LinkToggleTouchBlack.js";
 import "./components/LinkIconTouchWhite.js";
 import "./components/LinkHomeWhite.js";
 import "./components/Card.js";
+
+// import data for cards in services section
 import { cardsData } from "./components/cardsData.js";
 
-// import { setupCounter } from "./counter.js";
-
+// initialize variables
 const BODY_FIXED_CLASSNAME = "body-fixed";
 const MENU_LINKS_HIDE_CLASSNAME = "hide";
 const MENU_GETINTOUCH_HIDE_CLASSNAME = "hide";
@@ -25,7 +26,7 @@ const burgerButtonNode = document.querySelector(".menu-burger");
 const dropdownNode = document.querySelector(".menu-dropdown-wrapper");
 const dropdownTextNode = document.querySelector(".menu-dropdown__text");
 
-// modal window
+// modal window section
 const modalWindowNode = document.getElementById("modalWindow");
 const modalOpenBtnNode = document.getElementById("modalOpenBtn");
 const modalWindowContentNode = document.getElementById("modalWindowContent");
@@ -50,7 +51,7 @@ function togglePopup() {
 }
 // end modal window
 
-// functions
+// dropdown menu section
 function toggleDropdownMenu() {
     // Toggle the 'active' class on both the 'menu-burger'
     bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);
@@ -70,9 +71,7 @@ dropdownTextNode.addEventListener("click", function () {
     toggleDropdownMenu();
 });
 
-// for TBS only - remove in PROD
-console.log(cardsData);
-
+// render cards in services section
 cardsData.forEach((card) => {
     const cardElement = document.createElement("card-container");
     cardElement.setAttribute("title", card.title);
@@ -81,19 +80,3 @@ cardsData.forEach((card) => {
     cardElement.setAttribute("text", JSON.stringify(card.text));
     cardsGrid.appendChild(cardElement);
 });
-
-// document.querySelector("#app").innerHTML = `
-//   <div>
-//     <h4 class="h4">Welcome to Test Counter:</h4>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//   </div>
-// `;
-
-// setupCounter(document.querySelector("#counter"));
-
-// TEST: Button Toggle
-// document.querySelector(".toggle-button").addEventListener("click", function () {
-//     this.classList.toggle("on");
-// });

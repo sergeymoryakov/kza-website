@@ -8,18 +8,11 @@
 @import "section-footer.css";
 @import "section-modal.css";
 
-/* support file - remove for production */
-/* @import "ui-kit.css";  */
-
 @import "font-family-gsv.css";
 @import "font-styles.css";
 @import "tags.css";
 @import "arrows.css";
 @import "cards.css";
-
-/* support file - remove for production */
-/* @import "buttons.css";  */
-
 @import "components.css";
 
 :root {
@@ -66,13 +59,6 @@
     --mg-24: 24px;
     --mg-32: 32px;
     --mg-40: 40px;
-    /* --mg-48: 48px; */
-    /* --mg-72: 72px; */
-    /* --mg-96: 96px; */
-    /* --mg-120: 120px; */
-    /* --mg-152: 152px; */
-    /* --mg-168: 168px; */
-    --mg-192: 192px;
 
     font-family: "GeneralSans-Variable", system-ui, -apple-system, sans-serif;
 
@@ -87,25 +73,12 @@ html {
 body {
     margin: 0 auto;
     padding-bottom: 1rem;
-    /* padding: 0 var(--pd-200); */
     max-width: 1440px;
     min-width: 360px;
     background-color: var(--clr-sky-gray);
-
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* place-items: center; */
-    /* position: relative; */
 }
 
 /* fix content while dropdown menu is open */
 .body-fixed {
     overflow: hidden;
-}
-
-/* development (dev) components - remove in production */
-#development {
-    display: block;
-    border: 1px dashed red;
-    padding: 1rem;
 }

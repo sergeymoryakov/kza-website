@@ -46,6 +46,9 @@
     color: var(--clr-white);
     text-decoration: none;
 }
+#footer a:hover {
+    color: var(--clr-royal-blue);
+}
 
 .footer-legal-wrapper {
     display: flex;
@@ -86,22 +89,8 @@
 
 .footer-legal-btn:hover {
     cursor: pointer;
-    color: var(--clr-dark-gray);
+    color: var(--clr-royal-blue);
 }
-
-/* .footer-socials-wrapper {
-    display: flex;
-    justify-content: space-around;
-    grid-area: socials;
-} */
-
-/* .footer-socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2.25rem;
-} */
 
 .footer-address-wrapper {
     display: flex;
@@ -130,13 +119,11 @@
         "logo"
         "links"
         "legal"
-        /* "socials" */
         "address"
         "copyright";
     row-gap: 3rem;
 }
 
-/* @media (min-width: 576px) { */
 @media (min-width: 550px) {
     .footer-wrapper {
         grid-template-columns: 1fr 1fr;
@@ -201,10 +188,8 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
-        /* gap: 2.5rem; */
     }
 
-    /* .footer-socials-wrapper, */
     .footer-legal-wrapper {
         align-items: end;
     }
