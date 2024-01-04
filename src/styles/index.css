@@ -8,7 +8,8 @@
 @import "section-footer.css";
 @import "section-modal.css";
 
-@import "ui-kit.css"; /* support file - remove for production */
+/* support file - remove for production */
+/* @import "ui-kit.css";  */
 
 @import "font-family-gsv.css";
 @import "font-styles.css";
@@ -16,7 +17,9 @@
 @import "arrows.css";
 @import "cards.css";
 
-@import "buttons.css"; /* support file - remove for production */
+/* support file - remove for production */
+/* @import "buttons.css";  */
+
 @import "components.css";
 
 :root {

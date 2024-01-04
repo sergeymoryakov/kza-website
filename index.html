@@ -414,7 +414,10 @@
                 </div>
 
                 <div class="footer-legal-wrapper">
-                    <button class="footer-legal-btn p-body-small">
+                    <button
+                        id="modalOpenBtn"
+                        class="footer-legal-btn p-body-small"
+                    >
                         Copyright Notice and<br />
                         Privacy Policy
                     </button>
@@ -475,12 +478,14 @@
         </section>
 
         <section id="modal">
-            <!-- New CSS Section to cover Popup Order Button  -->
-            <div class="js-popup popup-order">
-                <div class="js-popup-order-content popup-order-content">
-                    <button class="js-btn-order-close btn-order-close">
-                        <img src="icons/vector-close-black.svg" alt="Close" />
-                    </button>
+            <div id="modalWindow" class="modal-window">
+                <div id="modalWindowContent" class="modal-window__content">
+                    <div class="button-line">
+                        <button
+                            id="modalCloseBtn"
+                            class="modal-window__close-btn"
+                        ></button>
+                    </div>
                     <div class="privacy-content">
                         <h3>Copyright Notice</h3>
                         <p>
@@ -773,10 +778,9 @@
         </section>
 
         <!-- development code - remove in prod -->
-        <section id="development">
+        <!-- <section id="development">
             <a class="dev-link" href="./ui-kit.html">UI Kit Here</a>
-            <button class="js-btn-order btn-order">Privacy statement</button>
-        </section>
+        </section> -->
         <!-- development code ends here -->
 
         <script type="module" src="./src/index.js"></script>

@@ -8,13 +8,14 @@ import "./components/LinkHomeWhite.js";
 import "./components/Card.js";
 import { cardsData } from "./components/cardsData.js";
 
-import { setupCounter } from "./counter.js";
+// import { setupCounter } from "./counter.js";
 
 const BODY_FIXED_CLASSNAME = "body-fixed";
 const MENU_LINKS_HIDE_CLASSNAME = "hide";
 const MENU_GETINTOUCH_HIDE_CLASSNAME = "hide";
 const MENU_DROPDOWN_BUTTON_ACTIVE_CLASSNAME = "active";
 const MENU_DROPDOWN_ACTIVE_CLASSNAME = "active";
+const MODAL_WINDOW_ACTIVE_CLASSNAME = "modal-window-active";
 
 const bodyNode = document.querySelector("body");
 const cardsGrid = document.getElementById("cardsGrid");
@@ -25,19 +26,18 @@ const dropdownNode = document.querySelector(".menu-dropdown-wrapper");
 const dropdownTextNode = document.querySelector(".menu-dropdown__text");
 
 // modal window
-const POPUP_OPENED_CLASSNAME = "popup-order-open";
-const popupNode = document.querySelector(".js-popup");
-const btnOpenNode = document.querySelector(".js-btn-order");
-const popupContentNode = document.querySelector(".js-popup-order-content");
-const btnCloseNode = document.querySelector(".js-btn-order-close");
+const modalWindowNode = document.getElementById("modalWindow");
+const modalOpenBtnNode = document.getElementById("modalOpenBtn");
+const modalWindowContentNode = document.getElementById("modalWindowContent");
+const modalCloseBtnNode = document.getElementById("modalCloseBtn");
 
-btnOpenNode.addEventListener("click", togglePopup);
-btnCloseNode.addEventListener("click", togglePopup);
+modalOpenBtnNode.addEventListener("click", togglePopup);
+modalCloseBtnNode.addEventListener("click", togglePopup);
 
-popupNode.addEventListener("click", (event) => {
+modalWindowNode.addEventListener("click", (event) => {
     const isClickOutsideContent = !event
         .composedPath()
-        .includes(popupContentNode);
+        .includes(modalWindowContentNode);
 
     if (isClickOutsideContent) {
         togglePopup();
@@ -45,7 +45,7 @@ popupNode.addEventListener("click", (event) => {
 });
 
 function togglePopup() {
-    popupNode.classList.toggle(POPUP_OPENED_CLASSNAME);
+    modalWindowNode.classList.toggle(MODAL_WINDOW_ACTIVE_CLASSNAME);
     bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);
 }
 // end modal window
