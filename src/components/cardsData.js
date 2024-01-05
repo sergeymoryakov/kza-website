@@ -81,7 +81,8 @@ export const cardsData = [
         icon: "9-report.svg",
         image: "9-card.png",
         text: [
-            "We assist in obtaining and reporting intelligence on your competitors' activities, including sales, pricing, availability, marketing strategies, and new product development.",
+            "Our commitment to transparency means providing timely reporting to your sales management team and marketing services.",
+            "We highlight both opportunities won and lost, along with the primary buyer decision factors.",
         ],
     },
     {
@@ -99,7 +100,8 @@ export const cardsData = [
         icon: "11-record.svg",
         image: "11-card.png",
         text: [
-            "We maintain a comprehensive and clear record of ongoing prospecting activities using our customer-provided CRM and LMT tools. Upon request, we provide regularly scheduled reports to senior management.",
+            "We maintain a comprehensive and clear record of ongoing prospecting activities using our customer-provided CRM and LMT tools.",
+            "Upon request, we provide regularly scheduled reports to senior management.",
         ],
     },
     {
