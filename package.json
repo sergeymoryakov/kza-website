@@ -2,14 +2,16 @@
     "homepage": "https://sergeymoryakov.github.io/kza-mobile/",
     "name": "kza-mobile",
     "private": true,
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
+        "build-prod": "vite build --mode production",
+        "build-gh-pages": "vite build --mode gh-pages",
         "preview": "vite preview",
         "start": "npm run dev",
-        "predeploy": "npm run build",
+        "predeploy": "npm run build-gh-pages",
         "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
