@@ -1,6 +1,6 @@
 {
-    "homepage": "https://sergeymoryakov.github.io/kza-mobile/",
-    "name": "kza-mobile",
+    "homepage": "https://sergeymoryakov.github.io/kza-website/",
+    "name": "kza-website",
     "private": true,
     "version": "0.0.2",
     "type": "module",
