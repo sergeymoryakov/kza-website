@@ -43,7 +43,7 @@
 }
 
 .services-header-grid__block-4 p {
-    margin-left: clamp(4rem, 9vw, 7rem);
+    margin-left: clamp(2rem, 6vw, 5rem);
     position: relative;
 }
 
@@ -55,7 +55,7 @@
     background: url("../../public/icons/arrow-orange-right.svg") no-repeat
         center;
     position: absolute;
-    margin-left: clamp(-3.5rem, 9vw, -6.5rem);
+    margin-left: clamp(-1.5rem, 6vw, -4.5rem);
     top: 0rem;
 }
 

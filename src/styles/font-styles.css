@@ -17,6 +17,17 @@
     font-weight: 500;
 }
 
+.h1-x {
+    font-size: clamp(3.25rem, 8.5vw, 8rem);
+    line-height: clamp(2.5rem, 6.3vw, 6.75rem);
+    letter-spacing: clamp(-0.155rem, -0.5vw, -0.45rem);
+    /* font-size: 9.5rem; */
+    /* line-height: 7.5rem; */
+    /* letter-spacing: -0.57rem; */
+    font-style: normal;
+    font-weight: 500;
+}
+
 .h2 {
     font-size: clamp(2.9375rem, 6.6vw, 6rem);
     line-height: clamp(2.5rem, 5.5vw, 5rem);
