@@ -45,61 +45,6 @@ modalWindowNode.addEventListener("click", (event) => {
     }
 });
 
-function loadVideoIfFastConnection() {
-    const connection =
-        navigator.connection ||
-        navigator.mozConnection ||
-        navigator.webkitConnection;
-    if (connection && connection.effectiveType.includes("4g")) {
-        // load video
-        const aircraftHTML = `
-                    <video class="image-3d" autoplay loop muted playsinline>
-                        <source
-                            src="/public/models/aircraft-hevc-safari.mp4"
-                            type='video/mp4; codecs="hvc1"'
-                            alt="3D Aircraft"
-                        />
-                        <source
-                            src="/public/models/aircraft-vp9-chrome.webm"
-                            type="video/webm"
-                            alt="3D Aircraft"
-                        />
-                    </video>
-        `;
-        const logoHTML = `
-                    <video autoplay loop muted playsinline>
-                        <source
-                            src="/public/models/logo-transparent-hevc-safari.mp4"
-                            type='video/mp4; codecs="hvc1"'
-                            alt="3D Logo"
-                        />
-                        <source
-                            src="/public/models/logo-transparent-vp9-chrome.webm"
-                            type="video/webm"
-                        />
-                    </video>
-        `;
-        const engineHTML = `
-                    <video class="image-3d" autoplay loop muted playsinline>
-                        <source
-                            src="/public/models/engine-hevc-safari.mp4"
-                            type='video/mp4; codecs="hvc1"'
-                            alt="3D Engine"
-                        />
-                        <source
-                            src="/public/models/engine-vp9-chrome.webm"
-                            type="video/webm"
-                        />
-                    </video>
-        `;
-        document.querySelector(".aircraft-3d").innerHTML = aircraftHTML;
-        document.querySelector(".logo-3d").innerHTML = logoHTML;
-        document.querySelector(".engine-3d").innerHTML = engineHTML;
-    }
-}
-
-window.addEventListener("load", loadVideoIfFastConnection);
-
 function togglePopup() {
     modalWindowNode.classList.toggle(MODAL_WINDOW_ACTIVE_CLASSNAME);
     bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);

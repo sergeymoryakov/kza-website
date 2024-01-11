@@ -18,7 +18,7 @@
     position: relative;
 }
 
-.header-visual video {
+/* .header-visual video {
     width: 110%;
     max-height: 120%;
     object-fit: contain;
@@ -26,6 +26,24 @@
     top: -50%;
     right: -10%;
     z-index: 500;
+} */
+
+.header-visual .aircraft-3d {
+    width: 110%;
+    max-height: 120%;
+    object-fit: contain;
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    z-index: 500;
+
+    /* border: 1px solid red; */
+}
+
+.header-visual .aircraft-3d img,
+.header-visual .aircraft-3d video {
+    width: 100%;
+    height: auto;
 }
 
 .header-circle {
@@ -91,7 +109,8 @@
         right: 2.5rem;
     }
 
-    .header-visual video {
+    /* .header-visual video { */
+    .header-visual .aircraft-3d {
         top: -50%;
     }
 

@@ -73,7 +73,8 @@ html {
 body {
     margin: 0 auto;
     padding-bottom: 1rem;
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    max-width: 1600px;
     min-width: 360px;
     background-color: var(--clr-sky-gray);
 }

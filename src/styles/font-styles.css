@@ -1,7 +1,7 @@
 .h1 {
-    font-size: clamp(4.25rem, 10.5vw, 9.5rem);
-    line-height: clamp(3.5rem, 8.3vw, 7.5rem);
-    letter-spacing: clamp(-0.255rem, -0.63vw, -0.57rem);
+    font-size: clamp(3.25rem, 8.5vw, 9.5rem);
+    line-height: clamp(2.5rem, 6.3vw, 7.5rem);
+    letter-spacing: clamp(-0.155rem, -0.5vw, -0.57rem);
     /* font-size: 9.5rem; */
     /* line-height: 7.5rem; */
     /* letter-spacing: -0.57rem; */
@@ -18,9 +18,12 @@
 }
 
 .h1-x {
-    font-size: clamp(3.25rem, 8.5vw, 8rem);
-    line-height: clamp(2.5rem, 6.3vw, 6.75rem);
-    letter-spacing: clamp(-0.155rem, -0.5vw, -0.45rem);
+    font-size: clamp(3.25rem, 8.5vw, 9.5rem);
+    line-height: clamp(2.5rem, 6.3vw, 7.5rem);
+    letter-spacing: clamp(-0.155rem, -0.5vw, -0.57rem);
+    /* font-size: clamp(3.25rem, 8.5vw, 8rem); */
+    /* line-height: clamp(2.5rem, 6.3vw, 6.75rem); */
+    /* letter-spacing: clamp(-0.155rem, -0.5vw, -0.45rem); */
     /* font-size: 9.5rem; */
     /* line-height: 7.5rem; */
     /* letter-spacing: -0.57rem; */
