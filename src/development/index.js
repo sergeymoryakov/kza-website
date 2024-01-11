@@ -45,6 +45,101 @@ modalWindowNode.addEventListener("click", (event) => {
     }
 });
 
+function loadVideoIfFastConnection() {
+    const connection =
+        navigator.connection ||
+        navigator.mozConnection ||
+        navigator.webkitConnection;
+    if (connection && connection.effectiveType.includes("4g")) {
+        // load video
+        const aircraftHTML = `
+                    <video class="image-3d" autoplay loop muted playsinline>
+                        <source
+                            src="models/aircraft-hevc-safari.mp4"
+                            type='video/mp4; codecs="hvc1"'
+                            alt="3D Aircraft"
+                        />
+                        <source
+                            src="models/aircraft-vp9-chrome.webm"
+                            type="video/webm"
+                            alt="3D Aircraft"
+                        />
+                    </video>
+        `;
+        const logoHTML = `
+                    <video autoplay loop muted playsinline>
+                        <source
+                            src="models/logo-transparent-hevc-safari.mp4"
+                            type='video/mp4; codecs="hvc1"'
+                            alt="3D Logo"
+                        />
+                        <source
+                            src="models/logo-transparent-vp9-chrome.webm"
+                            type="video/webm"
+                        />
+                    </video>
+        `;
+        const engineHTML = `
+                    <video class="image-3d" autoplay loop muted playsinline>
+                        <source
+                            src="models/engine-hevc-safari.mp4"
+                            type='video/mp4; codecs="hvc1"'
+                            alt="3D Engine"
+                        />
+                        <source
+                            src="models/engine-vp9-chrome.webm"
+                            type="video/webm"
+                        />
+                    </video>
+        `;
+        document.querySelector(".aircraft-3d").innerHTML = aircraftHTML;
+        document.querySelector(".logo-3d").innerHTML = logoHTML;
+        document.querySelector(".engine-3d").innerHTML = engineHTML;
+    } else {
+        // load image
+        const aircraftHTML = `
+                        <img
+                            src="images/aircraft_s.png"
+                            alt="3D Aircraft"
+                            srcset="
+                                images/aircraft_s.png  300w,
+                                images/aircraft_m.png  600w,
+                                images/aircraft_l.png 1440w
+                            "
+                            sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, 1440px"
+                        />
+        `;
+        const logoHTML = `
+                        <img
+                            src="logos/kza_logo_m.png"
+                            alt="3D Logo"
+                            srcset="
+                                logos/kza_logo_m.png  600w,
+                                logos/kza_logo_l.png 1440w
+                            "
+                            sizes="(max-width: 600px) 600px, 1440px"
+                        />
+        `;
+        const engineHTML = `
+                        <img
+                            src="images/engine_s.png"
+                            alt="3D Engine"
+                            srcset="
+                                images/engine_s.png  300w,
+                                images/engine_m.png  600w,
+                                images/engine_l.png 1440w
+                            "
+                            sizes="(max-width: 300px) 300px, (max-width: 600px) 600px, 1440px"
+                        />
+        `;
+        document.querySelector(".aircraft-3d").innerHTML = aircraftHTML;
+        document.querySelector(".logo-3d").innerHTML = logoHTML;
+        document.querySelector(".engine-3d").innerHTML = engineHTML;
+    }
+}
+
+window.addEventListener("load", loadVideoIfFastConnection);
+
 function togglePopup() {
     modalWindowNode.classList.toggle(MODAL_WINDOW_ACTIVE_CLASSNAME);
     bodyNode.classList.toggle(BODY_FIXED_CLASSNAME);

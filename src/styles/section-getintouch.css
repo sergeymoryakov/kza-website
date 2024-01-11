@@ -18,20 +18,11 @@
     position: relative;
 }
 
-/* .git-grid__visual video {
-    width: 100%;
-    max-width: 30rem;
-    height: auto;
-    object-fit: contain;
-} */
-
 .git-grid__visual .engine-3d {
     width: 100%;
     max-width: 30rem;
     height: auto;
     object-fit: contain;
-
-    /* border: 1px solid red; */
 }
 
 .git-grid__visual .engine-3d img,
