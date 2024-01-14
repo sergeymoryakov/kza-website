@@ -17,6 +17,24 @@
     }
 }
 
+@media (min-width: 1700px) {
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 2100px) {
+    .cards-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 2500px) {
+    .cards-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
 .card-container {
     width: 100%;
     perspective: 1000px;
