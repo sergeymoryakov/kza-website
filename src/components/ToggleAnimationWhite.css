@@ -1,0 +1,99 @@
+.toggle-animation-white {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--clr-transparent);
+    border: 2px solid var(--clr-white);
+    border-radius: 48px;
+    color: var(--clr-white);
+    padding: 10px 16px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.toggle-animation-white .button-text {
+    margin-right: 40px; /* Space for the toggle */
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.toggle-animation-white::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 24px;
+    border: 2px solid var(--clr-white);
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.toggle-animation-white .toggle-switch {
+    width: 24px;
+    height: 24px;
+    background-color: var(--clr-white);
+    border-radius: 50%;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-animation-white:hover {
+    background-color: var(--clr-transparent);
+    border: 2px solid var(--clr-royal-blue);
+}
+
+.toggle-animation-white:hover .button-text {
+    color: var(--clr-royal-blue);
+}
+
+.toggle-animation-white:hover::after {
+    border: 2px solid var(--clr-royal-blue);
+}
+
+.toggle-animation-white:hover .toggle-switch {
+    background-color: var(--clr-royal-blue);
+    /* transform: translate(14px, -50%); */
+}
+
+.toggle-animation-white.dynamic {
+    border: 2px solid var(--clr-royal-blue);
+    color: var(--clr-royal-blue);
+}
+
+.toggle-animation-white.dynamic::after {
+    right: 10px;
+    border: 2px solid var(--clr-royal-blue);
+}
+
+.toggle-animation-white.dynamic .toggle-switch {
+    background-color: var(--clr-royal-blue);
+    right: 10px;
+}
+
+.toggle-animation-white.dynamic:hover {
+    border: 2px solid var(--clr-white);
+}
+
+.toggle-animation-white.dynamic:hover .button-text {
+    color: var(--clr-white);
+}
+
+.toggle-animation-white.dynamic:hover::after {
+    border: 2px solid var(--clr-white);
+}
+
+.toggle-animation-white.dynamic:hover .toggle-switch {
+    background-color: var(--clr-white);
+    /* transform: translate(-14px, -50%); */
+}

@@ -32,12 +32,18 @@
     width: 80%;
     max-width: 20rem;
     object-fit: contain;
+    position: relative;
 }
 
 .services-header-grid__block-3 .logo-3d img,
 .services-header-grid__block-3 .logo-3d video {
     width: 100%;
     height: auto;
+}
+
+.services-header-grid__block-3 .logo-3d video {
+    position: absolute;
+    inset: 0;
 }
 
 .services-header-grid__block-4 {

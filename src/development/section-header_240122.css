@@ -26,18 +26,12 @@
     top: -50%;
     right: -10%;
     z-index: 500;
-    position: relative;
 }
 
 .header-visual .aircraft-3d img,
 .header-visual .aircraft-3d video {
     width: 100%;
     height: auto;
-}
-
-.header-visual .aircraft-3d video {
-    position: absolute;
-    inset: 0;
 }
 
 .header-circle {

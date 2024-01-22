@@ -23,12 +23,18 @@
     max-width: 30rem;
     height: auto;
     object-fit: contain;
+    position: relative;
 }
 
 .git-grid__visual .engine-3d img,
 .git-grid__visual .engine-3d video {
     width: 100%;
     height: auto;
+}
+
+.git-grid__visual .engine-3d video {
+    position: absolute;
+    inset: 0;
 }
 
 .git-grid__visual .tag-vertical {
