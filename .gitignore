@@ -23,3 +23,7 @@ prod
 *.njsproj
 *.sln
 *.sw?
+
+# Backup files
+package_0_0_2.json
+package-lock_0_0_2.json
